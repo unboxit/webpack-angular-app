@@ -1,0 +1,28 @@
+{
+  "generator-ng-component": {
+    "routeDirectory": "app/modules/",
+    "directiveDirectory": "app/shared/",
+    "filterDirectory": "app/shared/",
+    "serviceDirectory": "app/shared/",
+    "basePath": "app",
+    "moduleName": "app",
+    "filters": [
+      "uirouter",
+      "jasmine"
+    ],
+    "extensions": [
+      "js",
+      "html",
+      "scss"
+    ],
+    "directiveSimpleTemplates": "",
+    "directiveComplexTemplates": "",
+    "filterTemplates": "",
+    "serviceTemplates": "",
+    "factoryTemplates": "",
+    "controllerTemplates": "",
+    "decoratorTemplates": "",
+    "providerTemplates": "",
+    "routeTemplates": ""
+  }
+}
