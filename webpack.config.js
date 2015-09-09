@@ -4,14 +4,16 @@ module.exports = {
   context: __dirname + '/app',
   entry: './app.js',
   output: {
-    path: __dirname + '/app',
-    filename: 'bundle.js'
+    path: __dirname + '/dist',
+    filename: './app.js'
   },
   module: {
     loaders: [
-      { test: /\.html$/, loader: 'file?name=[name].[ext]' },
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.styl$/, loaders: ['css', 'stylus'] }
+      { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
+      { test: /\.html$/i, loader: 'html' },
+      { test: /\.css$/i, loader: 'css' },
+      { test: /\.styl$/, loader: 'stylus' },
+      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.eot$|\.woff$|\.woff2$|\.ttf$|\.wav$|\.mp3$/, loader: 'file' }
     ],
     resolve: {
       modulesDirectories: ['./node_modules'],
