@@ -1,18 +1,19 @@
-'use strict';
+'use strict'
+
+var path = require('path')
 
 module.exports = {
-  context: __dirname + '/app',
+  context: path.join(__dirname, '/app'),
   entry: './app.js',
   output: {
-    path: __dirname + '/dist',
+    path: path.join(__dirname, '/dist'),
     filename: './app.js'
   },
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
       { test: /\.html$/i, loader: 'html' },
-      { test: /\.css$/i, loader: 'css' },
-      { test: /\.styl$/, loader: 'stylus' },
+      { test: /\.styl$/, loader: 'style!css!stylus' },
       { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.eot$|\.woff$|\.woff2$|\.ttf$|\.wav$|\.mp3$/, loader: 'file' }
     ],
     resolve: {
@@ -28,4 +29,4 @@ module.exports = {
     hot: true,
     inline: true
   }
-};
+}
