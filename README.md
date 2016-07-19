@@ -1,8 +1,8 @@
 ## Webpack Angular App
-[![bitHound Overalll Score](https://www.bithound.io/github/unboxit/webpack-angular-app/badges/score.svg)](https://www.bithound.io/github/unboxit/webpack-angular-app)
+
+[![Build Status](https://travis-ci.org/unboxit/webpack-angular-app.svg?branch=master)](https://travis-ci.org/unboxit/webpack-angular-app)
 [![bitHound Dependencies](https://www.bithound.io/github/unboxit/webpack-angular-app/badges/dependencies.svg)](https://www.bithound.io/github/unboxit/webpack-angular-app/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/unboxit/webpack-angular-app/badges/devDependencies.svg)](https://www.bithound.io/github/unboxit/webpack-angular-app/master/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/github/unboxit/webpack-angular-app/badges/code.svg)](https://www.bithound.io/github/unboxit/webpack-angular-app)
 
 Testing Webpack with Angular
 
